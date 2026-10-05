@@ -1,0 +1,276 @@
+/* 本番サイト（案A＝白磁）
+   白と明朝、中央ぞろえ。文字は小さく、写真を大きく。
+   2026-10-05 の打ち合わせで方向を決定。細部は他案から少しずつ取り込む。 */
+:root{
+  --fg:#1a1a1a; --mut:#6b6b6b; --faint:#9b9b9b; --line:#ececec;
+  --paper:#fbfaf8; --paper2:#f7f7f5; --ink:#20303c; --gold:#a99a72;
+  --line-green:#06C755;
+  --maxw:1080px; --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--fg);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans",system-ui,sans-serif;
+  font-size:14px;line-height:2.1;font-weight:400;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;font-weight:400}
+p{margin:0 0 1.1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.wrap.narrow{max-width:760px}
+.c{text-align:center}
+
+/* ヘッダー */
+header{padding:26px 0 0;text-align:center}
+.mark{display:inline-block;font-family:"Shippori Mincho",serif;font-size:19px;letter-spacing:.34em;color:#111}
+.mark small{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:11px;letter-spacing:.3em;color:var(--gold);margin-top:6px}
+nav{margin-top:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav ul{display:flex;justify-content:center;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+nav li+li{border-left:1px solid var(--line)}
+nav a{display:block;padding:14px 22px;font-size:12.5px;letter-spacing:.14em;color:#3a3a3a;transition:color .3s}
+nav a:hover,nav a.on{color:var(--gold)}
+
+/* ヒーロー */
+.hero{position:relative;height:74vh;min-height:430px;overflow:hidden}
+.hero>img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.62) 62%)}
+.hero-c{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:flex-end}
+.hero-c div{padding-right:8vw;text-align:right}
+.hero-c .l{display:block;font-family:"Shippori Mincho",serif;font-size:clamp(26px,3.6vw,44px);line-height:1.85;letter-spacing:.22em;color:var(--ink)}
+.hero-c .s{margin-top:22px;font-size:12.5px;letter-spacing:.16em;color:#4b5a63}
+
+/* 下層のヘッダー画像 */
+.pagehead{position:relative;height:44vh;min-height:280px;overflow:hidden}
+.pagehead>img{width:100%;height:100%;object-fit:cover}
+.pagehead::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,26,36,.55),rgba(14,26,36,.25))}
+.ph-c{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:0 24px}
+.ph-c .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:13px;letter-spacing:.3em;color:#e9d9b0}
+.ph-c h1{font-family:"Shippori Mincho",serif;font-size:clamp(24px,3.4vw,36px);letter-spacing:.3em;text-indent:.3em;margin:10px 0 8px}
+.ph-c p{margin:0;font-size:13px;letter-spacing:.08em;opacity:.92;max-width:40em}
+
+/* セクション共通 */
+section{padding:92px 0}
+section.alt{background:var(--paper2)}
+.ttl{text-align:center;margin:0 auto 42px}
+.ttl h2{font-family:"Shippori Mincho",serif;font-size:21px;letter-spacing:.42em;text-indent:.42em}
+.ttl h2::before,.ttl h2::after{content:"−";color:#c9c2b0;margin:0 18px;font-size:14px;vertical-align:.14em}
+.ttl small{display:block;font-family:"Cormorant Garamond",serif;font-size:11.5px;letter-spacing:.34em;color:var(--gold);margin-top:9px;text-indent:.34em}
+.lead{text-align:center;font-family:"Shippori Mincho",serif;font-size:clamp(16px,1.7vw,20px);line-height:2.5;letter-spacing:.12em;color:#2b3740}
+.lead-s{text-align:center;font-size:13.5px;line-height:2.4;color:var(--mut);letter-spacing:.06em}
+.btn{display:inline-block;margin-top:10px;padding:15px 44px;border:1px solid var(--ink);font-size:13px;letter-spacing:.2em;transition:.3s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.line{background:var(--line-green);border-color:var(--line-green);color:#fff}
+.btn.line:hover{filter:brightness(.93)}
+
+/* ラインアップ */
+.lineup{display:grid;grid-template-columns:repeat(3,1fr);gap:52px 34px}
+.lineup a{text-align:center}
+.lineup .ph{height:210px;display:flex;align-items:center;justify-content:center;background:#fff}
+.lineup img{max-height:100%;width:auto;object-fit:contain;transition:transform .8s var(--ease)}
+.lineup a:hover img{transform:scale(1.05)}
+.lineup b{display:block;margin-top:16px;font-size:13px;font-weight:500;letter-spacing:.1em}
+.lineup span{font-size:11.5px;color:var(--faint);letter-spacing:.1em}
+
+/* 体験の流れ */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;list-style:none;margin:0;padding:0}
+.flow .ph{aspect-ratio:4/3;overflow:hidden;background:var(--paper)}
+.flow .ph img{width:100%;height:100%;object-fit:cover}
+.flow b{display:block;margin-top:18px;font-family:"Shippori Mincho",serif;font-size:15.5px;letter-spacing:.1em;font-weight:500}
+.flow em{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:13px;letter-spacing:.2em}
+.flow p{margin-top:7px;font-size:12.5px;color:var(--mut);line-height:2}
+
+/* サロン検索 */
+.find{background:var(--paper2)}
+.findbox{max-width:560px;margin:0 auto;text-align:center}
+.findbox form{display:flex;gap:10px}
+.findbox select{flex:1;padding:15px 16px;border:1px solid #ddd;background:#fff;font-family:inherit;font-size:14px;color:#333;border-radius:0}
+.findbox button{padding:15px 30px;background:var(--ink);color:#fff;border:0;font-family:inherit;font-size:13.5px;letter-spacing:.14em;cursor:pointer;transition:background .3s}
+.findbox button:hover{background:#3a4c58}
+.findbox .n{margin-top:14px;font-size:11.5px;color:var(--faint);letter-spacing:.1em}
+
+/* 声 */
+.vo{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;list-style:none;margin:0 0 36px;padding:0}
+.vo li{border-top:1px solid var(--line);padding-top:22px}
+.vo q{display:block;font-family:"Shippori Mincho",serif;font-size:14px;line-height:2.15;color:#2c2c2c;letter-spacing:.04em}
+.vo cite{display:block;margin-top:14px;font-style:normal;font-size:11.5px;color:var(--faint);letter-spacing:.1em}
+
+.line-sec{background:var(--paper)}
+
+/* 事業の価値（ZAK原文） */
+.value{font-size:14.5px;line-height:2.25;color:#2e2e2e}
+.value p{margin:0 0 1.5em}
+.vh{font-family:"Shippori Mincho",serif;font-size:18px;letter-spacing:.14em;margin:48px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.vh:first-child{margin-top:0}
+.vt{width:100%;border-collapse:collapse;margin:8px 0 34px;font-size:13.5px}
+.vt th,.vt td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.95}
+.vt tr:first-child th,.vt tr:first-child td{background:var(--paper2);font-weight:500;color:var(--mut);font-size:12.5px;letter-spacing:.1em}
+.vt th{width:38%;font-weight:500}
+.vclose{margin-top:44px;padding:30px 32px;background:var(--paper);border-left:2px solid var(--gold)}
+.vclose-l{font-family:"Shippori Mincho",serif;font-size:clamp(15px,1.7vw,18px);line-height:2.3;letter-spacing:.1em;color:var(--ink)}
+.vclose p:last-child{margin-bottom:0}
+.vnote{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.9}
+.info{width:100%;border-collapse:collapse;font-size:13.5px}
+.info th,.info td{padding:14px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.info th{width:26%;font-weight:400;color:var(--mut);font-size:12.5px;letter-spacing:.1em}
+
+/* フッター */
+footer{border-top:1px solid var(--line);padding:56px 0 0;margin-top:0}
+.f-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:30px;align-items:start}
+.f-mark{font-family:"Shippori Mincho",serif;font-size:15px;letter-spacing:.2em}
+.f-mark small{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:10.5px;letter-spacing:.26em;color:var(--gold);margin-top:5px}
+.f-nav ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 16px}
+.f-nav a{font-size:12.5px;color:var(--mut);letter-spacing:.06em}
+.f-nav a:hover{color:var(--fg)}
+.f-note{font-size:12px;color:var(--faint);line-height:2}
+.f-copy{margin-top:44px;padding:20px 0;border-top:1px solid var(--line);text-align:center;font-size:11px;color:var(--faint);letter-spacing:.08em}
+
+/* 出現 */
+[data-rv]{opacity:0;transform:translateY(16px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){[data-rv]{opacity:1;transform:none;transition:none}}
+
+@media(max-width:860px){
+  nav ul{justify-content:flex-start;overflow:auto;-webkit-overflow-scrolling:touch}
+  nav a{padding:13px 16px;white-space:nowrap}
+  .hero{height:58vh}
+  .hero::after{background:linear-gradient(0deg,rgba(255,255,255,.88),rgba(255,255,255,.25))}
+  .hero-c{align-items:flex-end}
+  .hero-c div{padding:0 24px 32px;text-align:left}
+  section{padding:62px 0}
+  .lineup{grid-template-columns:repeat(2,1fr);gap:34px 18px}
+  .lineup .ph{height:150px}
+  .flow,.vo{grid-template-columns:1fr;gap:26px}
+  .findbox form{flex-direction:column}
+  .vt th{width:auto}
+  .vt,.vt tbody,.vt tr,.vt th,.vt td{display:block}
+  .vt tr{border-bottom:1px solid var(--line);padding:10px 0}
+  .vt th,.vt td{border:0;padding:4px 0}
+  .vt th{font-weight:700;font-size:14px;color:var(--fg)}
+  .vt tr:first-child{display:none}
+  .f-in{grid-template-columns:1fr;gap:22px}
+}
+
+/* ===== 下層ページの部品 ===== */
+.tag{display:inline-block;font-size:11px;letter-spacing:.16em;color:var(--gold);border:1px solid #d9cfb4;padding:2px 10px;margin-bottom:10px}
+.crumb{font-size:11.5px;color:var(--faint);letter-spacing:.08em;margin:0 0 28px}
+.crumb a{color:var(--mut);border-bottom:1px solid var(--line)}
+
+/* 製品一覧 */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 30px;margin-top:20px}
+.pcard{display:block}
+.pcard .ph{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line);padding:24px;transition:border-color .5s}
+.pcard:hover .ph{border-color:#d9cfb4}
+.pcard img{max-height:100%;width:auto;object-fit:contain;transition:transform .8s var(--ease)}
+.pcard:hover img{transform:scale(1.04)}
+.pc-b{padding-top:16px}
+.pc-b b{display:block;font-family:"Shippori Mincho",serif;font-size:16px;font-weight:500;letter-spacing:.08em}
+.pc-b p{font-size:12.5px;color:var(--mut);margin:6px 0 0;line-height:1.9}
+
+/* 製品詳細 */
+.pd{padding-top:56px}
+.pd-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.pd-img{background:#fff;border:1px solid var(--line);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:34px}
+.pd-img img{max-height:100%;width:auto;object-fit:contain}
+.pd-txt h1{font-family:"Shippori Mincho",serif;font-size:clamp(22px,2.6vw,30px);letter-spacing:.12em;margin:4px 0 14px}
+.pd-lead{font-family:"Shippori Mincho",serif;font-size:16px;line-height:2.1;color:var(--ink);letter-spacing:.06em}
+.pd-body{font-size:14px;line-height:2.2;color:#333;margin:18px 0 22px;padding-top:18px;border-top:1px solid var(--line)}
+.pd-dl{display:grid;grid-template-columns:92px 1fr;gap:10px 16px;font-size:13px;margin:0 0 26px}
+.pd-dl dt{color:var(--faint);letter-spacing:.1em}
+.pd-dl dd{margin:0}
+.pd-dl ul{margin:0;padding-left:1.1em}
+.pd-img2{margin-top:44px;max-width:640px}
+.pd-nav{display:flex;justify-content:space-between;gap:14px;margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;letter-spacing:.06em;color:var(--mut);flex-wrap:wrap}
+.pd-nav a:hover{color:var(--fg)}
+
+/* サロン検索 */
+.finder{max-width:880px;margin:0 auto}
+.f-regions,.f-prefs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px}
+.f-regions button,.f-prefs button{border:1px solid #ddd;background:#fff;font-family:inherit;font-size:13px;letter-spacing:.08em;padding:9px 18px;cursor:pointer;color:#444;transition:.3s}
+.f-regions button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.f-prefs button{font-size:12.5px;padding:7px 14px}
+.f-prefs button.on{border-color:var(--ink);color:var(--ink);font-weight:700}
+.f-prefs button span{font-size:10.5px;color:var(--faint);margin-left:6px}
+.f-list{margin-top:26px;border-top:1px solid var(--line)}
+.salon{display:grid;grid-template-columns:70px 1fr auto;gap:4px 18px;padding:16px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+.salon .sp{font-size:11.5px;color:var(--gold);letter-spacing:.1em;grid-row:span 2}
+.salon b{font-weight:500;font-size:14.5px;letter-spacing:.04em}
+.salon .sa{grid-column:2;font-size:12.5px;color:var(--mut)}
+.salon .sl{grid-column:3;grid-row:1/3;display:flex;gap:14px;font-size:12.5px;white-space:nowrap}
+.salon .sl a{border-bottom:1px solid var(--line);color:var(--ink)}
+.f-count{text-align:center;font-size:11.5px;color:var(--faint);letter-spacing:.1em;margin-top:18px}
+
+/* イベント */
+.evlist{border-top:1px solid var(--line)}
+.evrow{display:grid;grid-template-columns:150px 1fr auto;gap:20px;align-items:center;padding:20px 6px;border-bottom:1px solid var(--line);transition:background .3s}
+.evrow:hover{background:var(--paper)}
+.evrow time{font-family:"Cormorant Garamond",serif;font-size:16px;letter-spacing:.06em;color:var(--gold)}
+.evrow b{display:block;font-weight:500;font-size:14px;line-height:1.8}
+.evrow span{font-size:12px;color:var(--faint)}
+.evrow i{font-style:normal;color:var(--faint)}
+.evlist.past .evrow b{font-weight:400;color:#444}
+
+/* ブログ */
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 30px}
+.bcard .ph{aspect-ratio:3/2;overflow:hidden;background:var(--paper2)}
+.bcard .ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.bcard:hover .ph img{transform:scale(1.04)}
+.bcard time{display:block;margin-top:14px;font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--gold);letter-spacing:.08em}
+.bcard b{display:block;font-weight:500;font-size:14px;line-height:1.8;margin-top:2px}
+
+/* 詳細ページ（イベント・ブログ） */
+.detail{padding-top:56px}
+.dt{font-family:"Shippori Mincho",serif;font-size:clamp(20px,2.4vw,27px);line-height:1.7;letter-spacing:.06em;margin:6px 0 26px}
+.d-date{font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--gold);letter-spacing:.08em}
+.d-img{margin:0 0 28px}
+.d-body{font-size:14.5px;line-height:2.25;color:#333;margin:30px 0 36px}
+.detail .info{margin-top:10px}
+.detail .btn{margin-bottom:10px}
+
+/* プロフィール */
+.person{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:start;padding:20px 0 70px;margin-bottom:60px;border-bottom:1px solid var(--line)}
+.person:last-child{border-bottom:0;margin-bottom:0}
+.person.rev{grid-template-columns:1fr 320px}
+.person.rev .pp-img{order:2}
+.pp-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.pp-txt .role{font-size:11.5px;color:var(--gold);letter-spacing:.1em;line-height:1.9}
+.pp-txt h2{font-family:"Shippori Mincho",serif;font-size:24px;letter-spacing:.16em;margin:8px 0 22px}
+.pp-txt h2 small{display:block;font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.24em;color:var(--faint);margin-top:6px}
+.pp-txt p{font-size:13.5px;line-height:2.25;color:#333}
+
+/* お問い合わせ */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.cbox{border:1px solid var(--line);padding:34px 32px;background:#fff}
+.cbox h3{font-family:"Shippori Mincho",serif;font-size:17px;letter-spacing:.1em;margin-bottom:14px}
+.cbox p{font-size:13.5px;color:var(--mut);line-height:2.1}
+.cbox .btn{margin-right:8px}
+
+/* 提携サロン募集 */
+.checks{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--line)}
+.checks li{padding:14px 0 14px 30px;border-bottom:1px solid var(--line);position:relative;font-size:14px}
+.checks li::before{content:"";position:absolute;left:4px;top:23px;width:12px;height:6px;border-left:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(-45deg)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:none}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.steps em{grid-row:span 2;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;color:var(--gold)}
+.steps b{font-weight:500;font-size:15px;letter-spacing:.06em}
+.steps p{margin:0;font-size:13px;color:var(--mut)}
+
+/* 歩み */
+.hist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.hist li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 4px;border-bottom:1px solid var(--line);font-size:13.5px}
+.hist time{font-family:"Cormorant Garamond",serif;font-size:16px;color:var(--gold);letter-spacing:.06em}
+
+@media(max-width:860px){
+  .pgrid,.bgrid{grid-template-columns:repeat(2,1fr);gap:30px 16px}
+  .pd-grid,.cgrid{grid-template-columns:1fr;gap:28px}
+  .pd-img{padding:22px}
+  .person,.person.rev{grid-template-columns:1fr;gap:24px}
+  .person.rev .pp-img{order:0}
+  .pp-img img{max-width:320px}
+  .evrow{grid-template-columns:1fr;gap:4px}
+  .evrow i{display:none}
+  .salon{grid-template-columns:1fr;gap:2px}
+  .salon .sp{grid-row:auto}
+  .salon .sa,.salon .sl{grid-column:1;grid-row:auto}
+  .salon .sl{margin-top:6px}
+  .hist li{grid-template-columns:84px 1fr}
+}
