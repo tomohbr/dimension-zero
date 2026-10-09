@@ -285,3 +285,9 @@ footer{border-top:1px solid var(--line);padding:56px 0 0;margin-top:0}
 .btn.wh{border-color:#fff;color:#fff}
 .btn.wh:hover{background:#fff;color:var(--ink)}
 @media(max-width:860px){.pband{height:52vh}.pband-c{bottom:28px}}
+/* 提携サロン募集：集合写真 */
+.gphoto-s{padding-top:0}
+.gphoto{margin:0 auto;max-width:960px}
+.gphoto img{display:block;width:100%;height:auto;border-radius:2px}
+.gphoto figcaption{margin-top:14px;text-align:center;font-size:13px;letter-spacing:.08em;color:var(--mut,#6b6b6b)}
+.gphoto figcaption span{display:inline-block}
