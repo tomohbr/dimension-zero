@@ -302,3 +302,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 0;margin-top:0}
   .vh{font-size:16px;letter-spacing:.06em}
   .lineup b,.pc-b b{letter-spacing:.02em}
 }
+/* サロン一覧：紹介文（押すと開く） */
+.salon .si{grid-column:2/4;margin-top:6px;font-size:12.5px}
+.salon .si summary{cursor:pointer;color:var(--gold);letter-spacing:.08em;width:max-content}
+.salon .si p{margin:8px 0 2px;line-height:2;color:#444}
+@media(max-width:860px){.salon .si{grid-column:1}}
