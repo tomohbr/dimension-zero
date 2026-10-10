@@ -291,3 +291,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 0;margin-top:0}
 .gphoto img{display:block;width:100%;height:auto;border-radius:2px}
 .gphoto figcaption{margin-top:14px;text-align:center;font-size:13px;letter-spacing:.08em;color:var(--mut,#6b6b6b)}
 .gphoto figcaption span{display:inline-block}
+
+/* スマホ：見出しの字間を詰めて「ディメンションシリーズ」等を1行に。製品名は「・」でだけ折り返す */
+.lineup b,.pc-b b{word-break:keep-all}
+@media(max-width:480px){
+  .ph-c h1{font-size:clamp(19px,5.6vw,24px);letter-spacing:.08em;text-indent:.08em;white-space:nowrap}
+  .ttl h2{font-size:18px;letter-spacing:.1em;text-indent:.1em}
+  .ttl h2::before,.ttl h2::after{margin:0 6px}
+  .vh{font-size:16px;letter-spacing:.06em}
+  .lineup b,.pc-b b{letter-spacing:.02em}
+}
