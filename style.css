@@ -308,3 +308,15 @@ footer{border-top:1px solid var(--line);padding:56px 0 0;margin-top:0}
 .salon .si p{margin:8px 0 2px;line-height:2;color:#444;white-space:pre-line}
 @media(max-width:860px){.salon .si{grid-column:1}}
 .salon .si .more{display:inline-block;margin-top:6px;border-bottom:1px solid var(--line);color:var(--ink)}
+/* フッターのSNS */
+.f-sns{list-style:none;margin:0 auto;padding:18px 24px 0;max-width:1100px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:12.5px;letter-spacing:.08em}
+.f-sns a{color:var(--ink);border-bottom:1px solid var(--line)}
+/* 活動実績 */
+.act-h{font-family:"Shippori Mincho",serif;font-weight:500;font-size:16px;letter-spacing:.06em;margin:34px 0 10px}
+.act-h:first-of-type{margin-top:0}
+.act-y{font-size:13px;color:var(--gold);letter-spacing:.1em;font-weight:500;margin:18px 0 6px}
+.act{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.act li{padding:12px 4px;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.9}
+.act li b{font-weight:500}
+.act li span{color:var(--mut);font-size:12.5px}
+.act li em{font-style:normal;margin-left:.6em;color:var(--gold);font-size:12.5px}
