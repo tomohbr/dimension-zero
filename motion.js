@@ -47,7 +47,9 @@
         var p = it[0], s = it[1];
         var tel = s.tel ? '<a href="tel:' + esc(s.tel.replace(/-/g, '')) + '">電話 ' + esc(s.tel) + '</a>' : '';
         var map = '<a target="_blank" rel="noopener" href="https://www.google.com/maps/search/' + encodeURIComponent(s.addr + ' ' + s.name) + '">地図</a>';
-        return '<div class="salon"><span class="sp">' + esc(p) + '</span><b>' + esc(s.name) + '</b><span class="sa">' + esc(s.addr) + (s.note ? '　' + esc(s.note) : '') + '</span><span class="sl">' + tel + map + '</span>' + (s.intro ? '<details class="si"><summary>紹介文</summary><p>' + esc(s.intro) + '</p></details>' : '') + '</div>';
+        var sns = s.sns ? '<a target="_blank" rel="noopener" href="' + esc(s.sns) + '">' + (s.sns.indexOf('instagram.com') >= 0 ? 'Instagram' : 'SNS') + '</a>' : '';
+        var more = (s.more && s.sns) ? '<a class="more" target="_blank" rel="noopener" href="' + esc(s.sns) + '">続きは' + (s.sns.indexOf('instagram.com') >= 0 ? 'Instagram' : 'SNS') + 'で</a>' : '';
+        return '<div class="salon"><span class="sp">' + esc(p) + '</span><b>' + esc(s.name) + '</b><span class="sa">' + esc(s.addr) + (s.note ? '　' + esc(s.note) : '') + '</span><span class="sl">' + tel + map + sns + '</span>' + (s.intro ? '<details class="si"><summary>紹介文</summary><p>' + esc(s.intro) + '</p>' + more + '</details>' : '') + '</div>';
       }).join('') : '<p class="lead-s">この地域のサロンは準備中です。</p>';
       f.querySelector('[data-count]').textContent = '表示 ' + items.length + ' 件　／　掲載 ' + total + ' 件';
     };
