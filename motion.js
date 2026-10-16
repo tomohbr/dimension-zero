@@ -63,6 +63,7 @@
 
   /* イベント詳細 */
   var ed = d.querySelector('[data-event]');
+  if ((ed || d.querySelector('[data-post]')) && /^[\w-]+$/.test(q('id') || '')) { location.replace(q('id') + '.html'); return; }
   if (ed && window.DZ_POSTS) {
     var e = window.DZ_POSTS.filter(function (x) { return x.type === 'event' && x.id === q('id'); })[0];
     if (!e) { ed.innerHTML = '<p class="lead-s">イベントが見つかりませんでした。<a href="events.html">イベント一覧へ</a></p>'; }
