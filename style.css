@@ -372,3 +372,6 @@ nav a{padding:6px 0;font-size:12px;letter-spacing:.16em;color:#4b463d}
   .find2{grid-template-columns:1fr;gap:26px}
   .evrow{grid-template-columns:1fr;gap:2px}
 }
+/* オープンチャット（お問い合わせ欄の下） */
+.contact-d .oc{margin:26px auto 0;max-width:640px;text-align:center;font-size:13px;line-height:2;color:#555}
+.contact-d .oc a{display:inline-block;color:var(--ink);border-bottom:1px solid var(--line)}

@@ -7,7 +7,8 @@
   "venue": "田野BASE",
   "address": "宮崎県宮崎市田野町",
   "organizer": "MIZUHA",
-  "body": ""
+  "body": "",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -17,7 +18,8 @@
   "venue": "鹿児島市内",
   "address": "鹿児島県鹿児島市",
   "organizer": "一般財団法人ディメンション・ゼロ",
-  "body": ""
+  "body": "",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -27,7 +29,8 @@
   "venue": "伊万里市内",
   "address": "佐賀県伊万里市",
   "organizer": "Terra☆Lyra",
-  "body": ""
+  "body": "",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -41,7 +44,8 @@
   "start": "11:30",
   "end": "16:00",
   "image": "img/events/ev-2025-09-23.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumokoenkai-tadewakikenaiohanashi-ds-190andominrakuraishusai"
+  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumokoenkai-tadewakikenaiohanashi-ds-190andominrakuraishusai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -55,7 +59,8 @@
   "start": "10:30",
   "end": "15:00",
   "image": "img/events/ev-2025-08-03.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/yurarisuopunibento-zak-moonohanashikai-suitoshindonoohanashi"
+  "src": "https://www.dimension-zero.org/blank-5/yurarisuopunibento-zak-moonohanashikai-suitoshindonoohanashi",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -69,7 +74,8 @@
   "start": "13:00",
   "end": "16:30",
   "image": "img/events/ev-2025-07-21.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/hikariopunibento"
+  "src": "https://www.dimension-zero.org/blank-5/hikariopunibento",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -83,7 +89,8 @@
   "start": "13:00",
   "end": "16:00",
   "image": "img/events/ev-2025-07-13.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/shukuen"
+  "src": "https://www.dimension-zero.org/blank-5/shukuen",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -97,7 +104,8 @@
   "start": "13:30",
   "end": "16:00",
   "image": "img/events/ev-2025-07-01.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/hiroshimashideito3shunenkinenibento-zak-moonohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/hiroshimashideito3shunenkinenibento-zak-moonohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -110,7 +118,8 @@
   "body": "全国各地を巡って開催していますZakMoonオハナシ会、\n今回はディメンションを世に出すきっかけとなった自然豊かな素晴らしい場所で開催します✨\n\n春の花々も美しい季節にぜひお逢いしましょう🌿\n\n★開催日：4月27日(日)\n\n★時　間：10:30～16:00予定\n\n★参加費：3000縁\n\n★参加申込：\n①こちらのHPから参加申込\n②公式ラインに名前、連絡先\nhttps://lin.ee/BBJWem2\n③メールでイベント名、名前、連絡先\ndimensionzero.zero@gmail.com\n\n★場　所：山神Village 麺工房筑紫庵大ホール\n(福岡県筑紫野市山口2447\n山神ダム近く)",
   "start": "10:30",
   "image": "img/events/ev-2025-04-27.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/zak-moonohanashikai-tsukushian"
+  "src": "https://www.dimension-zero.org/blank-5/zak-moonohanashikai-tsukushian",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -123,7 +132,8 @@
   "body": "全ては水に秘密がある。\n水の振動を整えると何が起こるのか？\n波動共鳴装置、次元移動装置とも言われるディメンションシステム開発者坐久無雲氏による\n人生が軽やかに楽しくなるオハナシ会。",
   "start": "13:30",
   "image": "img/events/ev-2025-03-16.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/mizutoshindonoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/mizutoshindonoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -136,7 +146,8 @@
   "body": "自分の未来は自分でクリエイト",
   "start": "10:00",
   "image": "img/events/ev-2025-03-08.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumoohanashikaiandoshuzomarushe"
+  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumoohanashikaiandoshuzomarushe",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -149,7 +160,8 @@
   "body": "1年ぶりの宮崎オハナシ会開催★\n全ては周波数で説明がつく！\n2025年を楽しく生きるためのフシギで納得なオハナシ会。",
   "start": "10:30",
   "image": "img/events/ev-2025-02-26.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/tanoshikuikirutamenoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/tanoshikuikirutamenoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -162,7 +174,8 @@
   "body": "【映画「アイノオト」と坐久無雲 オハナシ会】\n\n⚫11:00 　ミニマルシェ\n⚫13:00　 波動共鳴映画「アイノオト」「リアルストーリー」\n⚫15:30　 坐久無雲氏オハナシ\n⚫16:30　 ミニマルシェ\n\n映画監督やキャスト、坐久氏への質問や交流\nディメンション家庭用デバイス体験会など！\n\n・参加費：大人　　5500円（前売り 4500円）\n　　　　　中学生　1000円\n　　　　　小学生　500円\n　　　　　未就学児 無料\n　　　　　＊前売価格や詳細は主催者へお問い合わせください\n\n ◾️お申込・お問い合わせ\nhttps://docs.google.com/forms/d/e/1FAIpQLSe10h3peA3pxzC7d-8JicMwkViodMhXR1NoDJpg1VKxDXPCdA/viewform",
   "start": "12:00",
   "image": "img/events/ev-2024-11-16.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/eiga-ainooto-tosuwahisamukumo-ohanashikai-in-nagoya"
+  "src": "https://www.dimension-zero.org/blank-5/eiga-ainooto-tosuwahisamukumo-ohanashikai-in-nagoya",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -178,7 +191,8 @@
   "organizer": "一般財団法人ディメンション・ゼロ",
   "applyUrl": "https://select-type.com/ev/?ev=xxo5KvBOnkQ",
   "image": "img/real/zak-talk.jpg",
-  "body": "「世界の正体は、『周波数』の中にある」\n\nディメンションシステムを開発したZAKが、自らの体験をもとにお話しします。\n\nオハナシ会のあとには、ディメンションシリーズの体験と、サロン専用機ディメンション・プロの説明会もあります。\n\n【当日の流れ】\n・11:00　オハナシ会\n・13:00　ディメンションシリーズの体験／ディメンション・プロ説明会\n\nお申し込みは、下のボタンから Select Type のページへお進みください。事前のお支払いは、クレジットカードもご利用いただけます。"
+  "body": "「世界の正体は、『周波数』の中にある」\n\nディメンションシステムを開発したZAKが、自らの体験をもとにお話しします。\n\nオハナシ会のあとには、ディメンションシリーズの体験と、サロン専用機ディメンション・プロの説明会もあります。\n\n【当日の流れ】\n・11:00　オハナシ会\n・13:00　ディメンションシリーズの体験／ディメンション・プロ説明会\n\nお申し込みは、下のボタンから Select Type のページへお進みください。事前のお支払いは、クレジットカードもご利用いただけます。",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -192,7 +206,8 @@
   "start": "13:00",
   "end": "16:00",
   "image": "img/events/ev-2023-06-30.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/ohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/ohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -206,7 +221,8 @@
   "start": "10:00",
   "end": "16:00",
   "image": "img/events/ev-2023-07-05.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/dimenshon-wapu-ohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/dimenshon-wapu-ohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -221,7 +237,8 @@
   "end": "15:00",
   "image": "",
   "src": "https://www.dimension-zero.org/blank-5/miraienokibo-oto-hado-gahanatsu-hikaritokage",
-  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）"
+  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -235,7 +252,8 @@
   "start": "13:00",
   "end": "15:30",
   "image": "img/events/ev-2023-07-18.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/dimenshonsaron-vu-erite-rinyuaruopunkinenibento-in-onomichi"
+  "src": "https://www.dimension-zero.org/blank-5/dimenshonsaron-vu-erite-rinyuaruopunkinenibento-in-onomichi",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -248,7 +266,8 @@
   "body": "高次元生体変換装置ディメンションPRO  開発者／高次振動研究所代表　坐久無雲\n\n38年間の探究で得た古代叡智と先端科学を元に、集大成としてディメンションを完成し、世に送り出すこととなった経緯や想いについて開発者よりお話をしていただきます。\n\n16:00〜18:00：質疑応答・座談会\n　　　　　　　家庭用ディメンションシリーズの体験もできます（自由参加）\n　　　　　　　3名限定※要予約 ディメンションプロ体験可能（35分間 初回料金5,500円）\n\n■ 参加費：3,500円\n　　　（cafePRANAお手製のスイーツ＆ドリンク付）\n\n■ お申込・お問合せ：Dimension Salon VERITE（島崎真理）\n　　　　　　　　　　090-2297-5991\n　　　　　　　　　　LINE ID：vjf9496w\n\n□  特殊音響セラピーディメンションプロは\n　翌日 ８/８(火) に体験会を予定しております\n　体験枠には限りがございますので、ご希望の方はお早めにご予約くださいませ\n　会場：コートヤード・バイ・マリオット新大阪ステーション",
   "start": "14:00",
   "image": "img/events/ev-2023-08-07.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumoohanashikai-in-osaka-1"
+  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumoohanashikai-in-osaka-1",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -261,7 +280,8 @@
   "body": "【サロンOPENの１周年記念イベント】\n\n皆さまに日頃の感謝の気持ちを込めて\nお楽しみいただけるイベントを企画いたしました！\n\nお話し会や歌と演奏などで一緒に盛り上がりましょう！\n\n■ 参加費：3,000円\n\n■ お申込・お問合せ：リラクゼーションD☆〜Drop（結華）",
   "start": "12:00",
   "image": "img/events/ev-2023-09-10.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/d-drop-ichishunenkinenibento-1-1"
+  "src": "https://www.dimension-zero.org/blank-5/d-drop-ichishunenkinenibento-1-1",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -275,7 +295,8 @@
   "start": "11:00",
   "end": "16:00",
   "image": "img/events/ev-2023-11-14.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/tsukushian-dimenshonmarushe"
+  "src": "https://www.dimension-zero.org/blank-5/tsukushian-dimenshonmarushe",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -289,7 +310,8 @@
   "start": "12:00",
   "end": "16:00",
   "image": "img/events/ev-2023-11-15.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/maninoreimoshikomishuryo-nagoyahatsu-dimenshonohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/maninoreimoshikomishuryo-nagoyahatsu-dimenshonohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -303,7 +325,8 @@
   "start": "13:00",
   "end": "17:00",
   "image": "img/events/ev-2023-12-09.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/mizunofushigitoningennosubarashisa-suwahisamukumoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/mizunofushigitoningennosubarashisa-suwahisamukumoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -317,7 +340,8 @@
   "start": "14:00",
   "end": "17:00",
   "image": "img/events/ev-2024-01-21.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/onzuiju-opuninguibento"
+  "src": "https://www.dimension-zero.org/blank-5/onzuiju-opuninguibento",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -330,7 +354,8 @@
   "body": "【 変革の時代 魂の記憶とメタモルフォーゼ】\n\n取り戻せる私たち本来の振動数\nこれから求められる医療とは\n\n2月4日申込　¥8800\nhttps://tol-app.jp/s/iryougroup/z0f7p7\n\n録画申込　¥5500\nhttps://tol-app.jp/s/iryougroup/6dw66v\n\n2月3日135.00度ワークショップ申込\n（ミクマリの里でお泊まりもできます。詳細はお問い合わせ下さい）\n¥7700\nhttps://tol-app.jp/s/iryougroup/pki468\n\n◆　講演会",
   "start": "13:00",
   "image": "img/events/ev-2024-02-04.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/henkakunojidai-tamashinokiokutometamorufoze"
+  "src": "https://www.dimension-zero.org/blank-5/henkakunojidai-tamashinokiokutometamorufoze",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -344,7 +369,8 @@
   "start": "14:00",
   "end": "16:00",
   "image": "img/events/ev-2024-02-24.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumoohanashikaiinitami"
+  "src": "https://www.dimension-zero.org/blank-5/suwahisamukumoohanashikaiinitami",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -358,7 +384,8 @@
   "start": "13:30",
   "end": "15:00",
   "image": "img/events/ev-2024-02-25.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/anatanoutsukushiimiraie"
+  "src": "https://www.dimension-zero.org/blank-5/anatanoutsukushiimiraie",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -372,7 +399,8 @@
   "start": "11:00",
   "end": "12:30",
   "image": "img/events/ev-2024-03-14.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/dimenshonshisutemu-kaihatsusha-suwahisamukumoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/dimenshonshisutemu-kaihatsusha-suwahisamukumoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -387,7 +415,8 @@
   "end": "15:30",
   "image": "",
   "src": "https://www.dimension-zero.org/blank-5/tsukushian-ohanashikai",
-  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）"
+  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -400,7 +429,8 @@
   "body": "ディメンション・プロや家庭用デバイスの体験や、\n音と周波数、水について\n様々なオハナシに触れられるチャンス！\nぜひこの機会にご参加ください！\n\n◆　お話会\n◆　デバイス体験会\n◆　ディメンション・プロ体験会\n\n■参加費：1000円 ＊当日受付にてお支払い\n■主催：hamon〜波紋〜　田尻陽子\n■お問い合わせ：090-9568-7670",
   "start": "13:00",
   "end": "16:00",
-  "src": "https://www.dimension-zero.org/blank-5/mizutoshuhasu-soshitedenjiha-naminandayona-suwahisamukumoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/mizutoshuhasu-soshitedenjiha-naminandayona-suwahisamukumoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -414,7 +444,8 @@
   "start": "13:00",
   "end": "16:00",
   "image": "img/events/ev-2024-06-02.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/uchutomizunonazonisemaru-suwahisasannoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/uchutomizunonazonisemaru-suwahisasannoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -428,7 +459,8 @@
   "start": "12:00",
   "end": "16:00",
   "image": "img/events/ev-2024-07-14.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/goennomoridesuwahisamukumoohanashikai-in-yugawara"
+  "src": "https://www.dimension-zero.org/blank-5/goennomoridesuwahisamukumoohanashikai-in-yugawara",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -443,7 +475,8 @@
   "end": "16:30",
   "image": "",
   "src": "https://www.dimension-zero.org/blank-5/hidekishachowith-lobrave-tokuraibu",
-  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）"
+  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -457,7 +490,8 @@
   "start": "13:00",
   "end": "17:20",
   "image": "img/events/ev-2024-08-27.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/jinseiwoappuguredosurushuhasunoohanashi"
+  "src": "https://www.dimension-zero.org/blank-5/jinseiwoappuguredosurushuhasunoohanashi",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -470,7 +504,8 @@
   "body": "【映画「アイノオト」と坐久無雲 オハナシ会】\n\n⚫11:00 　ミニマルシェ\n⚫13:00　 波動共鳴映画「アイノオト」「リアルストーリー」\n⚫15:30　 坐久無雲氏オハナシ\n⚫16:30　 ミニマルシェ\n\n映画監督やキャスト、坐久氏への質問や交流\nディメンション家庭用デバイス体験会など！\n\n・参加費：大人　　5500円（前売り 4500円）\n　　　　　中学生　1000円\n　　　　　小学生　500円\n　　　　　未就学児 無料\n　　　　　＊前売価格や詳細は主催者へお問い合わせください\n\n ◾️お申込・お問い合わせ\nhttps://docs.google.com/forms/d/e/1FAIpQLSe10h3peA3pxzC7d-8JicMwkViodMhXR1NoDJpg1VKxDXPCdA/viewform",
   "start": "13:00",
   "image": "img/events/ev-2024-09-28.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/eiga-ainooto-tosuwahisamukumo-ohanashikai-1"
+  "src": "https://www.dimension-zero.org/blank-5/eiga-ainooto-tosuwahisamukumo-ohanashikai-1",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -483,7 +518,8 @@
   "body": "【映画「アイノオト」と坐久無雲 オハナシ会】\n\n⚫11:00 　ミニマルシェ\n⚫13:00　 波動共鳴映画「アイノオト」「リアルストーリー」\n⚫15:30　 坐久無雲氏オハナシ\n⚫16:30　 ミニマルシェ\n\n映画監督やキャスト、坐久氏への質問や交流\nディメンション家庭用デバイス体験会など！\n\n・参加費：大人　　5500円（前売り 4500円）\n　　　　　中学生　1000円\n　　　　　小学生　500円\n　　　　　未就学児 無料\n　　　　　＊前売価格や詳細は主催者へお問い合わせください\n\n ◾️お申込・お問い合わせ\nhttps://docs.google.com/forms/d/e/1FAIpQLSe10h3peA3pxzC7d-8JicMwkViodMhXR1NoDJpg1VKxDXPCdA/viewform",
   "start": "10:00",
   "image": "img/events/ev-2024-10-12.jpg",
-  "src": "https://www.dimension-zero.org/blank-5/yamerarenai-tomaranai-mizutoshuhasuno-suwahisamukumoohanashikai"
+  "src": "https://www.dimension-zero.org/blank-5/yamerarenai-tomaranai-mizutoshuhasuno-suwahisamukumoohanashikai",
+  "status": "満員御礼"
  },
  {
   "type": "event",
@@ -497,7 +533,8 @@
   "start": "13:30",
   "image": "",
   "src": "https://www.dimension-zero.org/blank-5/sekaihatsudimenshonshisutemukaihatsushasuwahisamukumo-miyagikoenkai",
-  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）"
+  "image_note": "チラシに治療・病気が治ると読める表現があるため画像は載せない（2026-10-17）",
+  "status": "満員御礼"
  },
  {
   "type": "post",
