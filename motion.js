@@ -61,6 +61,26 @@
     draw();
   }
 
+  /* 終わったイベントに【終了】を付ける（静的なサイトなので、日付が過ぎたらここで付け替える） */
+  (function () {
+    var t = new Date(), pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    var today = t.getFullYear() + '-' + pad(t.getMonth() + 1) + '-' + pad(t.getDate());
+    var up = d.querySelector('[data-up]'), past = d.querySelector('[data-past]');
+    var keep = up ? +up.getAttribute('data-keep') || 30 : 30;
+    var k = new Date(t.getTime() - keep * 864e5);
+    var keepDay = k.getFullYear() + '-' + pad(k.getMonth() + 1) + '-' + pad(k.getDate());
+    [].forEach.call(d.querySelectorAll('[data-date]'), function (el) {
+      var dt = el.getAttribute('data-date');
+      if (dt >= today) return;
+      var bd = el.querySelector('.evbadge');
+      if (bd && bd.hasAttribute('hidden')) { bd.textContent = '終了'; bd.removeAttribute('hidden'); }
+      if (up && past && up.contains(el) && dt < keepDay) past.insertBefore(el, past.firstChild);
+    });
+    var dbd = d.querySelector('.dbadge[data-date]');
+    if (dbd && dbd.getAttribute('data-date') < today) { var ap = d.querySelector('[data-apply]'); if (ap) ap.remove(); }
+    if (up && !up.querySelector('.evrow')) up.innerHTML = '<p class="lead-s">次のイベントは準備中です。公式LINEでお知らせします。</p>';
+  })();
+
   /* イベント詳細 */
   var ed = d.querySelector('[data-event]');
   if ((ed || d.querySelector('[data-post]')) && /^[\w-]+$/.test(q('id') || '')) { location.replace(q('id') + '.html'); return; }

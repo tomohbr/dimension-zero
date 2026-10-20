@@ -320,3 +320,55 @@ footer{border-top:1px solid var(--line);padding:56px 0 0;margin-top:0}
 .act li b{font-weight:500}
 .act li span{color:var(--mut);font-size:12.5px}
 .act li em{font-style:normal;margin-left:.6em;color:var(--gold);font-size:12.5px}
+
+/* ===== 2026-10-20 浅井様の決定メモを反映 ===== */
+/* ① メニュー：案D（中央に細く、金の罫線） */
+nav{margin-top:20px;border:0}
+nav ul{gap:0 30px}
+nav li+li{border-left:0}
+nav a{padding:6px 0;font-size:12px;letter-spacing:.16em;color:#4b463d}
+.hrule{max-width:1100px;height:1px;margin:18px auto 0;background:linear-gradient(90deg,transparent,#d9cfae,transparent)}
+/* ② トップの第一印象：案B（画面いっぱいの写真。文字は最小限） */
+.hero{height:calc(100svh - 172px);min-height:520px}
+.hero::after{background:linear-gradient(180deg,rgba(11,14,17,.35),rgba(11,14,17,.05) 34%,rgba(11,14,17,.72))}
+.hero-c{align-items:flex-end;justify-content:flex-start}
+.hero-c>div{padding:0 6vw 11vh;text-align:left}
+.hero-c .s{padding:0}
+.hero-c .l{color:#fff;font-size:clamp(32px,6vw,76px);line-height:1.34;letter-spacing:.06em;overflow:hidden}
+.hero-c .l{animation:heroUp 1.3s cubic-bezier(.76,0,.24,1) both}
+.hero-c .l+.l{animation-delay:.13s}
+.hero-c .s{color:#fff;opacity:.85;margin-top:22px;letter-spacing:.18em}
+@keyframes heroUp{from{opacity:0;transform:translateY(40%)}to{opacity:1;transform:none}}
+/* ③ サロンの探し方：案C（写真と並べて、開業の案内も添える） */
+.find2{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;max-width:1000px;margin:0 auto}
+.find2 .findbox{max-width:none;text-align:left}
+.find2 .findbox .n{letter-spacing:.06em;line-height:1.9}
+.find2 .open{margin:18px 0 0;font-size:13px;line-height:2;color:#555}
+.find2 .open a{display:inline-block;margin-left:.3em;color:var(--ink);border-bottom:1px solid var(--line)}
+.find2 .ph{aspect-ratio:16/10;overflow:hidden;background:#e7e2d8}
+.find2 .ph img{width:100%;height:100%;object-fit:cover}
+/* ④ イベントの出し方：案C（記事の見出しのような一覧）＋ 終わったものに【終了】 */
+.evrow{grid-template-columns:170px 1fr auto;gap:20px;padding:18px 4px;align-items:baseline}
+.evlist.past .evbadge:not(.st){display:none}
+.evrow time{font-size:17px;color:#8a7a52;letter-spacing:.08em}
+.evrow b{font-family:"Shippori Mincho",serif;font-weight:500;font-size:16px;line-height:1.8}
+.evlist.past .evrow b{font-weight:500;color:#333}
+.evbadge{display:inline-block;margin-right:.6em;padding:1px 8px;border:1px solid #b9ad8f;color:#8a7a52;font-family:"Zen Kaku Gothic New",sans-serif;font-style:normal;font-size:11px;letter-spacing:.12em;vertical-align:.15em}
+.evbadge[hidden]{display:none}
+.dbadge{margin:0 0 6px}
+.dbadge .evbadge{font-size:12px}
+.evtop .evlist{border-top:1px solid var(--line)}
+/* ⑤ お問い合わせ：案D ＋ 案Eの緑の公式LINEボタン */
+.contact-d .ma{max-width:640px;margin:6px auto 0;text-align:center;font-family:"Shippori Mincho",serif;font-size:clamp(16px,1.8vw,20px);line-height:2.4;letter-spacing:.16em;color:#33302a}
+.pill-line{display:inline-block;margin-top:14px;background:#06C755;color:#fff;font-weight:700;font-size:15px;letter-spacing:.06em;padding:14px 40px;border-radius:999px;transition:filter .3s}
+.pill-line:hover{filter:brightness(.93)}
+@media(max-width:860px){
+  nav{margin-top:14px}
+  nav ul{gap:2px 18px;padding:0 16px;justify-content:center;overflow:visible}
+  nav a{font-size:11.5px;padding:5px 0}
+  .hrule{margin-top:12px}
+  .hero{height:calc(100svh - 196px);min-height:440px}
+  .hero-c>div{padding:0 24px 8vh}
+  .find2{grid-template-columns:1fr;gap:26px}
+  .evrow{grid-template-columns:1fr;gap:2px}
+}
