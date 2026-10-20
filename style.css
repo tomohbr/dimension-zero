@@ -375,3 +375,13 @@ nav a{padding:6px 0;font-size:12px;letter-spacing:.16em;color:#4b463d}
 /* オープンチャット（お問い合わせ欄の下） */
 .contact-d .oc{margin:26px auto 0;max-width:640px;text-align:center;font-size:13px;line-height:2;color:#555}
 .contact-d .oc a{display:inline-block;color:var(--ink);border-bottom:1px solid var(--line)}
+/* トップの動画（2026-10-20 坐久様提供。動画の中に言葉が入っているので、上に文字は重ねない） */
+.hero-v{background:#0d3b3a}
+.hero-v::after{display:none}
+.hero-v video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vh-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;margin:0}
+@media(max-width:860px){
+  /* 横長の動画の中の文字が左右で切れないよう、スマホは高さを抑える */
+  .hero-v{height:54svh;min-height:360px;max-height:520px}
+}
+@media(prefers-reduced-motion:reduce){.hero-v video{display:none}.hero-v{background:#0d3b3a url(img/video/hero-poster.jpg) center/cover no-repeat}}
