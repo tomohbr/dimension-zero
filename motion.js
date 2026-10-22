@@ -61,6 +61,24 @@
     draw();
   }
 
+  /* 文の最後の数文字を改行で切り離さない（スマホで行末に1〜2文字だけ落ちるのを防ぐ。text-wrap が効かない端末用にも） */
+  (function () {
+    var sel = 'section p, section h1, section h2, section h3, section li, section dd, section td, section q, .pagehead p, .pagehead h1';
+    [].forEach.call(d.querySelectorAll(sel), function (el) {
+      if (el.closest('nav, footer, .salon, .lineup, .pgrid, .evrow, form') || el.querySelector('.keep-tail')) return;
+      var n = el.lastChild;
+      while (n && n.nodeType === 1 && !/^(BR|IMG|INPUT|SELECT|BUTTON)$/.test(n.tagName) && n.lastChild) n = n.lastChild;
+      if (!n || n.nodeType !== 3) return;
+      var t = n.data.replace(/\s+$/, '');
+      if (t.replace(/\s/g, '').length < 10) return;
+      var k = 4, tail = t.slice(-k);
+      if (/\s/.test(tail)) return;
+      n.data = t.slice(0, -k);
+      var s = d.createElement('span'); s.className = 'keep-tail'; s.style.whiteSpace = 'nowrap'; s.textContent = tail;
+      n.parentNode.insertBefore(s, n.nextSibling);
+    });
+  })();
+
   /* 終わったイベントに【終了】を付ける（静的なサイトなので、日付が過ぎたらここで付け替える） */
   (function () {
     var t = new Date(), pad = function (n) { return (n < 10 ? '0' : '') + n; };
