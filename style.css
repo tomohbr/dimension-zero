@@ -385,3 +385,7 @@ nav a{padding:6px 0;font-size:12px;letter-spacing:.16em;color:#4b463d}
   .hero-v{height:54svh;min-height:360px;max-height:520px}
 }
 @media(prefers-reduced-motion:reduce){.hero-v video{display:none}.hero-v{background:#0d3b3a url(img/video/hero-poster.jpg) center/cover no-repeat}}
+/* 2026-10-22 スマホで行末に1〜2文字だけ取り残される改行を防ぐ（文言・デザインは変えない。未対応ブラウザは従来どおり） */
+p,li,dd,td,th,figcaption{text-wrap:pretty}
+.vclose-l span{display:inline-block}
+h1,h2,h3,.vh,.ph-c p,.lead,.contact-d .ma{text-wrap:balance}
