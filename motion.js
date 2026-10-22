@@ -61,6 +61,35 @@
     draw();
   }
 
+  /* トップの動画を必ず自動で流す（低電力モードやLINEの中のブラウザでは自動再生が止められることがある） */
+  (function () {
+    var v = d.querySelector('.hero-v video');
+    if (!v) return;
+    v.muted = true; v.defaultMuted = true; v.setAttribute('muted', ''); v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('webkit-playsinline', '');
+    var isWebKit = /AppleWebKit/.test(navigator.userAgent) && !/Chrome|CriOS|Android/.test(navigator.userAgent);
+    var done = false;
+    var asImage = function () {
+      // iPhone のブラウザは <img> に置いた mp4 を GIF のように自動で動かす（低電力モードでも止まらない）
+      if (done) return; done = true;
+      var img = d.createElement('img');
+      img.src = v.currentSrc || v.getAttribute('src'); img.alt = v.getAttribute('aria-label') || ''; img.className = 'hero-img';
+      img.onerror = function () { img.remove(); v.style.display = ''; v.setAttribute('data-img-failed', ''); waitTouch(); };
+      v.parentNode.insertBefore(img, v); v.style.display = 'none';
+    };
+    var onTouch = function () {
+      v.play().then(function () { done = true; }).catch(function () {});
+      ['touchstart', 'scroll', 'click'].forEach(function (e) { window.removeEventListener(e, onTouch, true); });
+    };
+    var waitTouch = function () { ['touchstart', 'scroll', 'click'].forEach(function (e) { window.addEventListener(e, onTouch, { capture: true, passive: true }); }); };
+    var failed = function () {
+      if (done) return;
+      if (isWebKit) asImage(); else waitTouch();
+    };
+    var p = v.play();
+    if (p && p.then) p.then(function () { done = true; }).catch(failed);
+    setTimeout(function () { if (v.paused && !done) failed(); }, 1500);
+  })();
+
   /* 文の最後の数文字を改行で切り離さない（スマホで行末に1〜2文字だけ落ちるのを防ぐ。text-wrap が効かない端末用にも） */
   (function () {
     var sel = 'section p, section h1, section h2, section h3, section li, section dd, section td, section q, .pagehead p, .pagehead h1';
