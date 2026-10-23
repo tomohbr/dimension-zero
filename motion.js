@@ -90,6 +90,13 @@
     setTimeout(function () { if (v.paused && !done) failed(); }, 1500);
   })();
 
+  /* 新製品の NEW を期限が来たら消す */
+  (function () {
+    var t = new Date(), pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    var today = t.getFullYear() + '-' + pad(t.getMonth() + 1) + '-' + pad(t.getDate());
+    [].forEach.call(d.querySelectorAll('.pnew[data-until]'), function (e) { if (e.getAttribute('data-until') < today) e.remove(); });
+  })();
+
   /* 文の最後の数文字を改行で切り離さない（スマホで行末に1〜2文字だけ落ちるのを防ぐ。text-wrap が効かない端末用にも） */
   (function () {
     var sel = 'section p, section h1, section h2, section h3, section li, section dd, section td, section q, .pagehead p, .pagehead h1';

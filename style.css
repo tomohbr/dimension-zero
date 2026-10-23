@@ -393,3 +393,10 @@ h1,h2,h3,.vh,.ph-c p,.lead,.contact-d .ma{text-wrap:balance}
 .hero-v video::-webkit-media-controls,.hero-v video::-webkit-media-controls-start-playback-button,.hero-v video::-webkit-media-controls-overlay-play-button{display:none!important;-webkit-appearance:none;opacity:0}
 .hero-v video{pointer-events:none}
 .hero-v .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+/* 2026-10-24 トップの製品の並び（8製品・4列）と NEW の印 */
+.lineup{grid-template-columns:repeat(4,1fr);gap:46px 26px}
+.lineup .ph,.pcard .ph{position:relative}
+.pnew{position:absolute;top:10px;left:10px;z-index:2;padding:2px 9px;background:var(--ink);color:#fff;font-style:normal;font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.18em}
+@media(max-width:860px){.lineup{grid-template-columns:repeat(2,1fr);gap:34px 18px}}
+/* 製品ページのボタン（2つのときはスマホで同じ幅で縦に並べる） */
+@media(max-width:860px){.pd-txt p a.btn{display:block;text-align:center;margin:12px 0 0;letter-spacing:.08em;padding-left:12px;padding-right:12px}}
