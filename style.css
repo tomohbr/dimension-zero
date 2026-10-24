@@ -400,3 +400,7 @@ h1,h2,h3,.vh,.ph-c p,.lead,.contact-d .ma{text-wrap:balance}
 @media(max-width:860px){.lineup{grid-template-columns:repeat(2,1fr);gap:34px 18px}}
 /* 製品ページのボタン（2つのときはスマホで同じ幅で縦に並べる） */
 @media(max-width:860px){.pd-txt p a.btn{display:block;text-align:center;margin:12px 0 0;letter-spacing:.08em;padding-left:12px;padding-right:12px}}
+/* 製品名：ディメンションを小さく、製品名を1行で（2026-10-24 坐久様） */
+.pn-d{display:block;font-size:.62em;letter-spacing:.2em;color:var(--mut);font-weight:400;margin-bottom:2px}
+.pn-n{display:block;white-space:nowrap}
+.pd-txt h1 .pn-d{font-size:.5em;margin-bottom:6px}
