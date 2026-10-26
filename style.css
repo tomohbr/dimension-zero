@@ -404,3 +404,11 @@ h1,h2,h3,.vh,.ph-c p,.lead,.contact-d .ma{text-wrap:balance}
 .pn-d{display:block;font-size:.62em;letter-spacing:.2em;color:var(--mut);font-weight:400;margin-bottom:2px}
 .pn-n{display:block;white-space:nowrap}
 .pd-txt h1 .pn-d{font-size:.5em;margin-bottom:6px}
+/* パソコンで見ている人に、公式LINEのQRを先に見せる（パソコンでLINEのリンクを押すとLINE側がQRを出す仕様のため） */
+.pc-qr{display:none}
+@media(hover:hover) and (pointer:fine) and (min-width:861px){
+  .pc-qr{display:flex;align-items:center;gap:16px;justify-content:center;margin:18px auto 0;max-width:460px;text-align:left}
+  .pc-qr img{width:110px;height:110px;border:1px solid var(--line);padding:6px;background:#fff}
+  .pc-qr p{margin:0;font-size:12.5px;line-height:1.9;color:var(--mut)}
+  .cbox .pc-qr{justify-content:flex-start;margin-top:16px}
+}

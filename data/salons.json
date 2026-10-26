@@ -78,6 +78,13 @@
    "name": "MIZUHA",
    "addr": "大阪府大阪市福島区福島",
    "tel": "090-5055-5898"
+  },
+  {
+   "name": "ひろボン",
+   "addr": "大阪府貝塚市脇浜3-9-21",
+   "tel": "",
+   "hp": "https://heroborn-salon.com/",
+   "intro": "ペットと同伴できる全国でも稀なサロンです。"
   }
  ],
  "兵庫": [
@@ -103,6 +110,20 @@
    "sns": "https://www.instagram.com/zero_pod_bay/",
    "intro": "Spatial Intelligence Mothership\nWelcome to the Era of Spatial Intelligence\n\n知性はどこにあるのか。\n私たちは今、\nひとつの旅の途中にいる。\n地球という惑星を航行しながら、\n空間を越え、\n時間を越え、\n意識を越え、\n見えないポータルからポータルへ、\nゲートからゲートへと\n移動し続けている。\n人はそれを人生と呼び、\nある人は成長と呼び、\nある人は進化と呼ぶ…\nその航海は、\n外へ向かう旅ではない。\n本来の座標へ還る旅である。\n私たちは、内側にある\n本来の座標を思い出すために、\nこの航海を続けている。",
    "more": true
+  },
+  {
+   "name": "ひろボン",
+   "addr": "岡山県勝田郡勝央町119-2",
+   "tel": "",
+   "hp": "https://heroborn-salon.com/",
+   "intro": "ペットと同伴できる全国でも稀なサロンです。"
+  },
+  {
+   "name": "ひろボン",
+   "addr": "岡山県津山市加茂町中原497-1",
+   "tel": "",
+   "hp": "https://heroborn-salon.com/",
+   "intro": "ペットと同伴できる全国でも稀なサロンです。"
   }
  ],
  "広島": [
