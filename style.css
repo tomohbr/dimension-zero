@@ -412,3 +412,15 @@ h1,h2,h3,.vh,.ph-c p,.lead,.contact-d .ma{text-wrap:balance}
   .pc-qr p{margin:0;font-size:12.5px;line-height:1.9;color:var(--mut)}
   .cbox .pc-qr{justify-content:flex-start;margin-top:16px}
 }
+
+/* 講演のご依頼 2026-10-27 */
+.lec p{line-height:2.1;margin-bottom:1.1em}
+.lec h3{font-family:"Shippori Mincho",serif;font-size:18px;letter-spacing:.1em;margin:2.2em 0 .8em;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.lec ul,.lec ol{margin:0 0 1em 1.4em;line-height:2.1}
+.lec ul li{list-style:disc}.lec ol li{list-style:decimal}
+.lec .lec-fee{font-size:20px;font-family:"Shippori Mincho",serif;letter-spacing:.06em;margin-bottom:.4em}
+.lec .lec-note{font-size:13px;color:var(--mut)}
+.lec .lec-sign{text-align:right;margin-top:1.6em}
+.lec .lec-btns .btn{margin:6px}
+.cgrid .cbox:nth-child(3){grid-column:1/-1}
+.d-body a{word-break:break-all;color:inherit;text-decoration:underline}
