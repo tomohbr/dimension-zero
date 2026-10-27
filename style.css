@@ -424,3 +424,5 @@ h1,h2,h3,.vh,.ph-c p,.lead,.contact-d .ma{text-wrap:balance}
 .lec .lec-btns .btn{margin:6px}
 .cgrid .cbox:nth-child(3){grid-column:1/-1}
 .d-body a{word-break:break-all;color:inherit;text-decoration:underline}
+.cbox h3.ka{word-break:keep-all}
+@media(max-width:600px){.cbox .btn{letter-spacing:.08em;padding-left:22px;padding-right:22px;white-space:nowrap}}
