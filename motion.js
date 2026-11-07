@@ -46,7 +46,7 @@
       f.querySelector('[data-list]').innerHTML = items.length ? items.map(function (it) {
         var p = it[0], s = it[1];
         var tel = s.tel ? '<a href="tel:' + esc(s.tel.replace(/-/g, '')) + '">電話 ' + esc(s.tel) + '</a>' : '';
-        var map = '<a target="_blank" rel="noopener" href="https://www.google.com/maps/search/' + encodeURIComponent(s.addr + ' ' + s.name) + '">地図</a>';
+        var map = '<a target="_blank" rel="noopener" href="https://www.google.com/maps/search/' + encodeURIComponent(s.mapq || s.addr) + '">地図</a>';
         var hp = s.hp ? '<a target="_blank" rel="noopener" href="' + esc(s.hp) + '">ホームページ</a>' : '';
         var sns = s.sns ? '<a target="_blank" rel="noopener" href="' + esc(s.sns) + '">' + (s.sns.indexOf('instagram.com') >= 0 ? 'Instagram' : 'SNS') + '</a>' : '';
         var more = (s.more && s.sns) ? '<a class="more" target="_blank" rel="noopener" href="' + esc(s.sns) + '">続きは' + (s.sns.indexOf('instagram.com') >= 0 ? 'Instagram' : 'SNS') + 'で</a>' : '';
